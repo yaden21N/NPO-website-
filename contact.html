@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Contact Page</title>
+    <meta name="description"
+        content="Learn about Somerset West Night Shelter, a non-profit organization providing temporary shelter, meals, and essential services to the homeless in the Helderberg District. Discover our mission to rehabilitate and support individuals while raising community awareness about homelessness.">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styling.css">
+    <link rel="icon" type="image/x-icon" href="images/logos/main-logo.png">
+</head>
+
+<body>
+    <!-- Uniform header section across all pages including nav bar-->
+    <header>
+        <div class="HeaderInfo">
+            <figure>
+                <img class="Logo" src="images/logos/main-logo.png" alt="Logo for night shelter" />
+            </figure>
+
+            <div class="Title">
+                <h1>Somerset West Night Shelter</h1>
+                <h3>Lending a Helping Hand to the Homeless</h3>
+            </div>
+        </div>
+        <nav class="links">
+            <a href="homepage.html" target="_blank">Home Page</a>
+            <a href="about.html" target="_blank">About Us</a>
+            <a href="contact.html" target="_blank">Contact Details</a>
+            <a href="donation.html" target="_blank">Donate</a>
+            <a href="services.html" target="_blank">Services Offered</a>
+        </nav>
+    </header>
+
+    <main>
+        <div class="layout">
+            <div class="pageTitle">
+                <h3>Contact Details</h3>
+            </div>
+
+            <div>
+                <p id="text">For more details or to get involved, you can reach out to the shelter through the following
+                    channels:</p>
+            </div>
+
+
+
+            <div class="contactNum">
+                <h3>Contact Us On:</h3>
+                <p>Tele:021 851 4984 </p>
+                <p>Fax: 086 685 2155</p>
+                <p>Email: info@swnightshelter.org.za </p>
+            </div>
+            <div class="address">
+
+                <div class="map">
+                    <h3>Find Us Here:</h3>
+                    <div class="socials">
+                        <a href="https://www.instagram.com/somerset_west_night_shelter/profilecard/?igsh=MW5rdzkzbjFsdG9leQ%3D%3D"
+                            target="_blank">
+                            <img src="images/ig-logo.webp" alt="instagram handle link" id="igLogo"></a>
+                        <a href="https://www.facebook.com/Somersetwestnightshelter?mibextid=LQQJ4d&rdid=2ZhkirOJsYIi1xgn&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2FAy2hvFLW6t9SL7Pd%2F%3Fmibextid%3DLQQJ4d# "
+                            target="_blank">
+                            <img src="images/facebook-logo.webp" alt="facebook logo" id="igLogo"></a>
+                    </div>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.5723963214795!2d18.840278015207235!3d-34.08231508059408!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc52993f9d6fcd%3A0x9ed92a3a6db9aaf2!2s71%20Church%20St%2C%20Somerset%20West%2C%207130%2C%20South%20Africa!5e0!3m2!1sen!2sza!4v1694175278381!5m2!1sen!2sza"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+
+                <p id="text">71 Church Street, Somerset West 7130 South Africa</p>
+                <p id="text">PO Box 1628 Somerset West 7129</p>
+            </div>
+
+            <div class="form">
+                <p id="text">For enquiries:</p>
+                <form id="enquiryForm">
+                    <label for="name">Full Name:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+
+                    <label for="email">Email Address:</label>
+                    <input type="email" id="email" name="email" required placeholder="Enter your email address">
+
+                    <label for="message">Your Message:</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Enter your message"></textarea>
+
+                    <button type="button" onclick="sendEmail()">Submit Enquiry</button>
+                </form>
+            </div>
+
+
+
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <p>Copyright @2024 Somerset West Night-Shelter. All rights reserved | <span id="dateStamp"></span></p>
+        </div>
+    </footer>
+
+    <script src="script.js" async defer></script>
+</body>
+
+</html>
